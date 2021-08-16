@@ -4,7 +4,7 @@ Automatically locks and unlocks a Discord voice channel at specific times, sendi
 Made for a friends specific use-case, not intended to be ran by others.  
 Only works in one server at a time.
 
-Quick setup:
+Quick setup:  
 Required: pipenv (usually `sudo apt install pipenv`)
 ```bash
 git clone https://github.com/Erisa/discord-voice-curfew 
