@@ -28,7 +28,7 @@ async def send_message(target_channel_id, target_message = "", send_with_empty_c
         print("requested to send message but skipping because no message was configured")
         return
     voiceChannel = client.get_channel(config.voicechannel_id)
-    
+
     if (send_with_empty_channel == False and len(voiceChannel.members) == 0):
         print("requested to send message but skipping because no members are present to see it")
         return
@@ -99,7 +99,7 @@ class MyClient(discord.Client):
         
         if message.content.startswith('!unlock'):
             await unlock()
-            await message.reply("✅ I've locked the voice channel!")
+            await message.reply("✅ I've unlocked the voice channel!")
 
     async def my_background_task(self):
         for key,value in config.warnings.items():
