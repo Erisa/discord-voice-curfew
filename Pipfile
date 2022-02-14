@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"discord.py" = "*"
+"discord.py" = {ref = "45d498c1b76deaf3b394d17ccf56112fa691d160", git = "https://github.com/Rapptz/discord.py.git"}
 aioschedule = "*"
 
 [dev-packages]
